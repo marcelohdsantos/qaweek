@@ -4,7 +4,8 @@ Funcionalidade: Login
     Sendo um usuário previamente cadastrado
     Quero acessar o sistema com meu email e senha
     Para que eu possa ter acesso as playlists do Parodify
-
+    
+    @smoke
     Cenário: Login do usuário
 
         Dado que acesso a página de Login
@@ -17,8 +18,8 @@ Funcionalidade: Login
         Então devo ver a mensagem de erro: "Oops! Dado de acesso incorretos!"
 
         Exemplos:
-            | email                 | senha  |
-            | fernando@404.com.br   | abc123 |
-            |                       |        |
-            | fernando@gmail.com.br |        |
-            | fernando@404.com.br   |        |
+            | email                     | senha  |
+            | marcelo@automatictest.com | pwe123 |
+            |                           |        |
+            | fernando@gmail.com.br     |        |
+            | fernando@404.com.br       |        |
