@@ -1,10 +1,8 @@
 Dado('Login com {string} e {string}') do |email, password|
-  visit 'http://parodify.qaninja.com.br'
+  visit '/'
   click_on 'Login'
 
-  find('#user_email').set email
-  find('#user_password').set password
-  click_on 'Log in'
+  login_with(email, password)
 end
 
 Dado('que eu gosto de muito {string}') do |cat|
